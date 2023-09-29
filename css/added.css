@@ -118,35 +118,6 @@ ul.my-info li ul.name-info li:nth-child(1){
 }
 
 
-/* For the skills section */
-.software-skills-bar {
-    float: left;
-    background: #fff;
-    width: 550px;
-    margin-right: 20px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-}
-.programming-skills {
-    float: right;
-    background: #fff;
-    width: 550px;
-    margin-left: 20px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-}
-
-.bar h4, .bar2 h4 {
-    letter-spacing: 1px;
-    font-weight: 600;
-    font-size: 16px;
-    margin-left: 10px;
-}
-
-.software-skills-bar h2, .programming-skills h2 {
-    text-align: center;
-    font-size: 22px;
-    margin-top: 15px;
-}
-
 /* Keep the existing CSS for the bar and bar2 classes */
 .bar, .bar2 {
     padding: 15px;
@@ -154,12 +125,12 @@ ul.my-info li ul.name-info li:nth-child(1){
     margin-bottom: 10px;
     width: 100%;
 }
+
 .bar span, .bar2 span {
     position: relative;
     display: inline-block;
     width: 100%;
     height: 20px;
-    background: #000;
     border-radius: 50px;
 }
 
@@ -174,27 +145,28 @@ abbr.percent {
     border-radius: 10px;
 }
 
-
-
+/* Adjust the width of the span elements based on the percentage */
 .bar span:before, .bar2 span:before {
-    position: absolute;
     content: "";
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: var(--percent); /* Use data-percent attribute to set the width */
     border-radius: 50px;
-    background: linear-gradient(to left, transparent 0%, transparent calc(100% - var(--percent) * 100%), #000 calc(100% - var(--percent) * 100%), #000 100%);
 }
 
-/* Keep the gradient background colors as before */
+/* Apply gradient background using background-image and background-size */
 .bar span:before {
-    background: linear-gradient(to left, transparent 0%, transparent calc(100% - var(--percent) * 100%), #ff0057 calc(100% - var(--percent) * 100%), #ff0057 100%);
+    background-image: linear-gradient(to left, #ff0057, #ffeb3b);
+    background-size: 100% 100%;
 }
 
 .bar2 span:before {
-    background: linear-gradient(to left, transparent 0%, transparent calc(100% - var(--percent) * 100%), #00ff99 calc(100% - var(--percent) * 100%), #00ff99 100%);
+    background-image: linear-gradient(to left, #00ff99, #cc33ff);
+    background-size: 100% 100%;
 }
+
 .btn.btn-dark.btn-social.mx-2 i {
     font-size: 20px; /* Adjust the font size as needed */
     color: white; /* Set the icon color */
