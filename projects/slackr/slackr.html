@@ -70,147 +70,64 @@
           <h2 class="screenshots-title">Screenshots</h2>
         </div>
       </div>
-      <div class="col-md-6">
-        <a href="#" id="img1" data-lightbox="screenshot" data-title="SlackR App Home Page">
-            <img src="./image/home.png" alt="SlackR App Home Page">
-        </a>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./image/home.png" alt="SlackR App Home Page" class="screenshot-img">
+        </div>
+        <div class="col-md-6">
+          <img src="./image/register.png" alt="SlackR App Register Account" class="screenshot-img">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./image/search.png" alt="SlackR App ScreenShot for Adding a Group" class="screenshot-img">
+        </div>
+        <div class="col-md-6">
+          <img src="./image/settings.png" alt="SlackR App ScreenShot for Settings page" class="screenshot-img">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./image/study_group.png" alt="SlackR App ScreenShot for the Study Group" class="screenshot-img">
+        </div>
+        <div class="col-md-6">
+          <img src="./image/members.png" alt="SlackR App ScreenShot for the Members" class="screenshot-img">
+        </div>
+      </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <a href="#" id="img2" data-lightbox="screenshot" data-title="SlackR App Register Account">
-                <img src="./image/register.png" alt="SlackR App Register Account" class="screenshot-img">
-            </a>
-        </div>
-        <div class="col-md-6">
-            <a href="#" id="img3" data-lightbox="screenshot" data-title="SlackR App ScreenShot for Adding a Group">
-                <img src="./image/search.png" alt="SlackR App ScreenShot for Adding a Group" class="screenshot-img">
-            </a>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-md-6">
-            <a href="#" id="img4" data-lightbox="screenshot" data-title="SlackR App ScreenShot for Settings page">
-                <img src="./image/settings.png" alt="SlackR App ScreenShot for Settings page" class="screenshot-img">
-            </a>
-        </div>
-        <div class="col-md-6">
-            <a href="#" id="img5" data-lightbox="screenshot" data-title="SlackR App ScreenShot for the Study Group">
-                <img src="./image/study_group.png" alt="SlackR App ScreenShot for the Study Group" class="screenshot-img">
-            </a>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-md-6">
-            <a href="#" id="img6" data-lightbox="screenshot" data-title="SlackR App ScreenShot for the Members">
-                <img src="./image/members.png" alt="SlackR App ScreenShot for the Members" class="screenshot-img">
-            </a>
-        </div>
-    </div>
-    
   </section>
+
 
   <script>
     // Initialize Lightbox2
     lightbox.option({
-        'resizeDuration': 200,
-        'wrapAround': true
+      'resizeDuration': 200,
+      'wrapAround': true
     });
+    function openLightbox(image) {
+      lightbox.open({
+        albumLabel: "SlackR App Screenshots",
+        fitImagesInViewport: true,
+        imageFadeDuration: 300,
+        positionFromTop: 50,
+        showImageNumberLabel: true,
+        wrapAround: true,
+        alwaysShowNavOnTouchDevices: true,
+        imageClickAction: "zoom",
+        disableScrolling: true,
+        sanitizeTitle: true,
+        fadeDuration: 200,
+      });
+    }
 
-    document.getElementById('img1').addEventListener('click', function () {
-        lightbox.open({
-            albumLabel: "SlackR App Screenshots",
-            fitImagesInViewport: true,
-            imageFadeDuration: 300,
-            positionFromTop: 50,
-            showImageNumberLabel: true,
-            wrapAround: true,
-            alwaysShowNavOnTouchDevices: true,
-            imageClickAction: "zoom",
-            disableScrolling: true,
-            sanitizeTitle: true,
-            fadeDuration: 200
-        });
-    });
+    var images = document.querySelectorAll('.screenshot-img');
 
-    document.getElementById('img2').addEventListener('click', function () {
-        lightbox.open({
-            albumLabel: "SlackR App Screenshots",
-            fitImagesInViewport: true,
-            imageFadeDuration: 300,
-            positionFromTop: 50,
-            showImageNumberLabel: true,
-            wrapAround: true,
-            alwaysShowNavOnTouchDevices: true,
-            imageClickAction: "zoom",
-            disableScrolling: true,
-            sanitizeTitle: true,
-            fadeDuration: 200
-        });
+    images.forEach(function (image) {
+      image.addEventListener('click', function () {
+        openLightbox(image);
+      });
     });
-
-    document.getElementById('img3').addEventListener('click', function () {
-        lightbox.open({
-            albumLabel: "SlackR App Screenshots",
-            fitImagesInViewport: true,
-            imageFadeDuration: 300,
-            positionFromTop: 50,
-            showImageNumberLabel: true,
-            wrapAround: true,
-            alwaysShowNavOnTouchDevices: true,
-            imageClickAction: "zoom",
-            disableScrolling: true,
-            sanitizeTitle: true,
-            fadeDuration: 200
-        });
-    });
-    document.getElementById('img4').addEventListener('click', function () {
-        lightbox.open({
-            albumLabel: "SlackR App Screenshots",
-            fitImagesInViewport: true,
-            imageFadeDuration: 300,
-            positionFromTop: 50,
-            showImageNumberLabel: true,
-            wrapAround: true,
-            alwaysShowNavOnTouchDevices: true,
-            imageClickAction: "zoom",
-            disableScrolling: true,
-            sanitizeTitle: true,
-            fadeDuration: 200
-        });
-    });
-    document.getElementById('img5').addEventListener('click', function () {
-        lightbox.open({
-            albumLabel: "SlackR App Screenshots",
-            fitImagesInViewport: true,
-            imageFadeDuration: 300,
-            positionFromTop: 50,
-            showImageNumberLabel: true,
-            wrapAround: true,
-            alwaysShowNavOnTouchDevices: true,
-            imageClickAction: "zoom",
-            disableScrolling: true,
-            sanitizeTitle: true,
-            fadeDuration: 200
-        });
-    });
-    document.getElementById('img6').addEventListener('click', function () {
-        lightbox.open({
-            albumLabel: "SlackR App Screenshots",
-            fitImagesInViewport: true,
-            imageFadeDuration: 300,
-            positionFromTop: 50,
-            showImageNumberLabel: true,
-            wrapAround: true,
-            alwaysShowNavOnTouchDevices: true,
-            imageClickAction: "zoom",
-            disableScrolling: true,
-            sanitizeTitle: true,
-            fadeDuration: 200
-        });
-    });
-</script>
+  </script>
 
 </body>
 
