@@ -194,6 +194,10 @@ abbr.percent {
 .bar2 span:before {
     background: linear-gradient(to left, #00ff99 0%, #cc33ff 100%);
 }
+.btn.btn-dark.btn-social.mx-2 i {
+    font-size: 20px; /* Adjust the font size as needed */
+    color: white; /* Set the icon color */
+}
 
 
 @keyframes bar {
