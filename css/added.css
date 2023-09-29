@@ -154,7 +154,6 @@ ul.my-info li ul.name-info li:nth-child(1){
     margin-bottom: 10px;
     width: 100%;
 }
-
 .bar span, .bar2 span {
     position: relative;
     display: inline-block;
@@ -175,24 +174,26 @@ abbr.percent {
     border-radius: 10px;
 }
 
-/* Adjust the width of the span elements based on the percentage */
+
+
 .bar span:before, .bar2 span:before {
     position: absolute;
     content: "";
     top: 0;
     left: 0;
     height: 100%;
-    width: attr(data-percent) '%'; /* Use data-percent attribute to set the width */
+    width: 100%;
     border-radius: 50px;
+    background: linear-gradient(to left, transparent 0%, transparent calc(100% - var(--percent) * 100%), #000 calc(100% - var(--percent) * 100%), #000 100%);
 }
 
 /* Keep the gradient background colors as before */
 .bar span:before {
-    background: linear-gradient(to left, #ff0057, #ffeb3b);
+    background: linear-gradient(to left, transparent 0%, transparent calc(100% - var(--percent) * 100%), #ff0057 calc(100% - var(--percent) * 100%), #ff0057 100%);
 }
 
 .bar2 span:before {
-    background: linear-gradient(to left, #00ff99 0%, #cc33ff 100%);
+    background: linear-gradient(to left, transparent 0%, transparent calc(100% - var(--percent) * 100%), #00ff99 calc(100% - var(--percent) * 100%), #00ff99 100%);
 }
 .btn.btn-dark.btn-social.mx-2 i {
     font-size: 20px; /* Adjust the font size as needed */
