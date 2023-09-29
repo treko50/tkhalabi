@@ -199,46 +199,32 @@ abbr.percent {
     }
 }
 
-.bar:nth-child(1) span:before{
-    width: 80%;
-}
-.bar:nth-child(3) span:before{ 
-    width: 70%;
-}
 .bar:nth-child(4) span:before{ 
-    width: 80%;
+    width: 70%;
 }
 .bar:nth-child(5) span:before{ 
-    width: 80%;
+    width: 60%;
 }
 .bar:nth-child(6) span:before{ 
-    width: 70%;
+    width: 50%;
 }
 .bar:nth-child(7) span:before{ 
     width: 50%;
 }
-.bar:nth-child(8) span:before{ 
-    width: 70%;
+
+.bar2:nth-child(9) span:before{ 
+    width:60%;
+}
+.bar2:nth-child(10) span:before{ 
+    width:60%;
+}
+.bar2:nth-child(11) span:before{ 
+    width:60%;
+}
+.bar2:nth-child(12) span:before{ 
+    width:60%;
 }
 
-.bar2:nth-child(1) span:before{
-    width: 85%;
-}
-.bar2:nth-child(3) span:before{ 
-    width: 75%;
-}
-.bar2:nth-child(4) span:before{ 
-    width: 75%;
-}
-.bar2:nth-child(5) span:before{ 
-    width: 75%;
-}
-.bar2:nth-child(6) span:before{ 
-    width: 80%;
-}
-.bar2:nth-child(7) span:before{ 
-    width:80%;
-}
 
 @media (max-width: 1200px) { 
     .software-skills-bar{
