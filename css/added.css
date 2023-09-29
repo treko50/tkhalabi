@@ -147,26 +147,25 @@ ul.my-info li ul.name-info li:nth-child(1){
     margin-top: 15px;
 }
 
-/* Update the CSS to align percentage text with bar length */
+/* Keep the existing CSS for the bar and bar2 classes */
 .bar, .bar2 {
     padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: inline-block;
     margin-bottom: 10px;
     width: 100%;
 }
 
 .bar span, .bar2 span {
     position: relative;
-    display: block;
-    height: 20px;
+    display: inline-block;
     width: 100%;
+    height: 20px;
     background: #000;
     border-radius: 50px;
 }
 
 abbr.percent {
+    margin-left: 10px;
     text-align: center;
     z-index: 1;
     color: #fff;
@@ -176,7 +175,7 @@ abbr.percent {
     border-radius: 10px;
 }
 
-/* Adjust the span width based on the percentage */
+/* Adjust the width of the span elements based on the percentage */
 .bar span:before, .bar2 span:before {
     position: absolute;
     content: "";
@@ -187,7 +186,7 @@ abbr.percent {
     border-radius: 50px;
 }
 
-/* Update the gradient color */
+/* Keep the gradient background colors as before */
 .bar span:before {
     background: linear-gradient(to left, #ff0057, #ffeb3b);
 }
