@@ -192,11 +192,26 @@ abbr.percent {
     animation: bar 4s ease;
 }
 
-
-@keyframes bar , @keyframes bar2{
+@keyframes bar {
     from {
         width: 0;
     }
+}
+
+@keyframes bar2 {
+    from {
+        width: 0;
+    }
+}
+
+.bar:nth-child(1) span:before{ 
+    width: 80%;
+}
+.bar:nth-child(2) span:before{ 
+    width: 80%;
+}
+.bar:nth-child(3) span:before{ 
+    width: 80%;
 }
 
 .bar:nth-child(4) span:before{ 
@@ -212,6 +227,30 @@ abbr.percent {
     width: 50%;
 }
 
+.bar2:nth-child(1) span:before{ 
+    width:80%;
+}
+.bar2:nth-child(2) span:before{ 
+    width:80%;
+}
+.bar2:nth-child(3) span:before{ 
+    width:80%;
+}
+.bar2:nth-child(4) span:before{ 
+    width:80%;
+}
+.bar2:nth-child(5) span:before{ 
+    width:80%;
+}
+.bar2:nth-child(6) span:before{ 
+    width:80%;
+}
+.bar2:nth-child(7) span:before{ 
+    width:80%;
+}
+.bar2:nth-child(8) span:before{ 
+    width:80%;
+}
 .bar2:nth-child(9) span:before{ 
     width:60%;
 }
