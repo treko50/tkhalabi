@@ -64,11 +64,26 @@ body {
     font-size: 1.5rem;
 }
 
-/* Update the CSS to resize images and maintain aspect ratio */
+/* Update the CSS to resize and arrange images */
 .screenshot-img {
-    max-width: 100%;
-    height: auto;
+    width: 200px; /* Set a fixed width of 200px */
+    height: 300px; /* Set a fixed height of 300px */
     display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto; /* Center-align the images horizontally */
+    margin-bottom: 20px; /* Add spacing between images */
+}
+
+/* Arrange images side by side on larger screens (medium and up) */
+@media (min-width: 768px) {
+    .screenshot-img {
+        float: left; /* Float images left to arrange them side by side */
+        margin-right: 20px; /* Add spacing between images */
+    }
+}
+
+/* Clear the float after the images to prevent layout issues */
+.screenshots::after {
+    content: "";
+    display: table;
+    clear: both;
 }
