@@ -245,11 +245,12 @@ abbr.percent {
     ul.my-info {
         padding-right: 10px;
     }
-    .my-info ul li{ 
-        display: 
+    .my-info ul li{
+        display: inline-block;
         margin-left:-5px;
         font-size: 14px;
     }
+    
     
     
 }
