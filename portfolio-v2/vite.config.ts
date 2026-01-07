@@ -13,7 +13,7 @@ export default defineConfig({
     },
     react(),
   ],
-  base: '/',
+  base: '/tkhalabi/',
   server: {
     port: 3000,
     open: true,
