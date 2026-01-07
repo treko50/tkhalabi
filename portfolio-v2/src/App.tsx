@@ -12,7 +12,7 @@ import ContactPage from './pages/ContactPage';
 function App() {
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename="/tkhalabi">
         <div className="min-h-screen bg-white dark:bg-dark-900 text-dark-900 dark:text-white transition-colors duration-300 scrollbar-custom">
           <Header />
           <main>
