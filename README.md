@@ -4,6 +4,8 @@ Personal portfolio website showcasing my professional experience, projects, and 
 
 Built with React, TypeScript, and Vite.
 
+**Live Site:** [https://tkhalabi.github.io](https://tkhalabi.github.io)
+
 ## Development
 
 ```bash
