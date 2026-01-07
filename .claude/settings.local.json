@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(xcopy:*)",
+      "Bash(robocopy:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npm run preview:*)",
+      "Bash(cd:*)",
+      "Bash(pdflatex:*)",
+      "Bash(winget install:*)",
+      "Bash(start:*)",
+      "Bash(cp:*)"
+    ]
+  }
+}

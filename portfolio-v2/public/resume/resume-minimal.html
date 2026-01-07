@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarek Halabi - Senior Full Stack Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            background: white;
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            min-height: 11in;
+        }
+
+        /* LEFT SIDEBAR */
+        .sidebar {
+            background: #f5f5f5;
+            color: #333333;
+            padding: 40px 28px;
+            border-right: 1px solid #dddddd;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 32px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .name {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .role {
+            font-size: 13px;
+            color: #666666;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .sidebar-section {
+            margin-bottom: 28px;
+        }
+
+        .sidebar-section h2 {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+            color: #1a1a1a;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #333333;
+        }
+
+        .contact-item {
+            margin-bottom: 12px;
+            font-size: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            line-height: 1.5;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            color: #555555;
+            min-width: 45px;
+        }
+
+        .contact-item a {
+            color: #333333;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .skill-category {
+            margin-bottom: 16px;
+        }
+
+        .skill-category-title {
+            font-size: 10px;
+            font-weight: 600;
+            color: #555555;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #ffffff;
+            color: #333333;
+            padding: 4px 10px;
+            border-radius: 3px;
+            font-size: 9px;
+            margin: 0 4px 4px 0;
+            border: 1px solid #cccccc;
+        }
+
+        .skill-item {
+            font-size: 10px;
+            color: #333333;
+            line-height: 1.5;
+        }
+
+        .education-item {
+            margin-bottom: 16px;
+        }
+
+        .degree {
+            font-size: 11px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+
+        .school {
+            font-size: 9px;
+            color: #666666;
+            line-height: 1.5;
+        }
+
+        .cert-item {
+            background: #ffffff;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #cccccc;
+            border-left: 3px solid #333333;
+        }
+
+        .cert-name {
+            font-size: 10px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 3px;
+        }
+
+        .cert-date {
+            font-size: 9px;
+            color: #666666;
+        }
+
+        /* MAIN CONTENT */
+        .main-content {
+            padding: 40px 40px;
+            background: #ffffff;
+        }
+
+        .summary {
+            font-size: 12px;
+            line-height: 1.7;
+            color: #333333;
+            background: #f9f9f9;
+            padding: 18px 20px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 32px;
+        }
+
+        .clearance-badge {
+            display: inline-block;
+            background: #333333;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 3px;
+            font-size: 9px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-left: 8px;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #333333;
+        }
+
+        /* EXPERIENCE CARDS */
+        .experience-item {
+            margin-bottom: 20px;
+            padding: 18px;
+            background: #fafafa;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            gap: 16px;
+        }
+
+        .job-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .company {
+            font-size: 12px;
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 2px;
+        }
+
+        .location {
+            font-size: 10px;
+            color: #666666;
+        }
+
+        .date-badge {
+            background: #333333;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 3px;
+            font-size: 9px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .achievements ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 8px;
+        }
+
+        .achievements li {
+            font-size: 11px;
+            line-height: 1.6;
+            color: #333333;
+            margin-bottom: 6px;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .achievements li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #333333;
+            font-weight: 700;
+        }
+
+        .achievements li strong {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        /* PROJECT CARD */
+        .project-card {
+            background: #f9f9f9;
+            padding: 16px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .project-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .project-desc {
+            font-size: 10px;
+            line-height: 1.6;
+            color: #333333;
+        }
+
+        .project-tech {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .tech-tag {
+            background: #ffffff;
+            color: #333333;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 9px;
+            font-weight: 600;
+            border: 1px solid #cccccc;
+        }
+
+        /* PRINT STYLES */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                width: 8.5in;
+                min-height: 11in;
+                margin: 0;
+                box-shadow: none;
+            }
+
+            @page {
+                size: letter;
+                margin: 0;
+            }
+
+            .experience-item {
+                page-break-inside: avoid;
+            }
+
+            .sidebar {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .date-badge, .clearance-badge {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        @media screen {
+            body {
+                background: #fafafa;
+                padding: 30px 20px;
+            }
+
+            .container {
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="name">Tarek Halabi</div>
+                <div class="role">Senior Full Stack Engineer</div>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="sidebar-section">
+                <h2>Contact</h2>
+                <div class="contact-item">
+                    <div class="contact-label">Location:</div>
+                    <div>McLean, VA</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Email:</div>
+                    <div><a href="mailto:thalabi98@gmail.com">thalabi98@gmail.com</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Phone:</div>
+                    <div>571-535-9863</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">LinkedIn:</div>
+                    <div><a href="https://www.linkedin.com/in/tarekhalabi/">linkedin.com/in/tarekhalabi</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">GitHub:</div>
+                    <div><a href="https://github.com/treko50">github.com/treko50</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Portfolio:</div>
+                    <div><a href="https://tkhalabi.github.io">tkhalabi.github.io</a></div>
+                </div>
+            </div>
+
+            <!-- TECHNICAL SKILLS -->
+            <div class="sidebar-section">
+                <h2>Skills</h2>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Languages</div>
+                    <div>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Frontend</div>
+                    <div class="skill-item">React.js, Angular, HTML5, CSS3, JSP, jQuery</div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Backend</div>
+                    <div class="skill-item">Spring Boot, Node.js, GraphQL, RESTful APIs</div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Databases</div>
+                    <div class="skill-item">PostgreSQL, MySQL, NoSQL, R</div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">DevOps & Cloud</div>
+                    <div class="skill-item">AWS, Amazon EKS, Kubernetes, Docker, CI/CD</div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Tools</div>
+                    <div class="skill-item">Git, JDBC, pgAdmin, Agile/Scrum</div>
+                </div>
+            </div>
+
+            <!-- EDUCATION -->
+            <div class="sidebar-section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <div class="degree">B.S. Computer Science</div>
+                    <div class="school">University of Maryland<br>College Park, MD<br>Graduated 2021</div>
+                </div>
+            </div>
+
+            <!-- CERTIFICATIONS -->
+            <div class="sidebar-section">
+                <h2>Certifications</h2>
+                <div class="cert-item">
+                    <div class="cert-name">Certified SAFe 5 Agilist</div>
+                    <div class="cert-date">Oct 2022 - Oct 2023</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <div class="summary">
+                <strong>6+ years</strong> of experience as a Full Stack Engineer specializing in identity verification solutions, RESTful APIs, and dynamic user interfaces. Expert in <strong>Java Spring Framework</strong>, <strong>React.js</strong>, and cloud-native architectures using <strong>Amazon EKS</strong>. Proven track record of reducing manual processes by 60% and mentoring development teams in Agile environments.
+                <span class="clearance-badge">Public Trust Clearance</span>
+            </div>
+
+            <!-- PROFESSIONAL EXPERIENCE -->
+            <div class="section">
+                <h2 class="section-title">Professional Experience</h2>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Senior Full Stack Engineer</div>
+                            <div class="company">ID Dataweb</div>
+                            <div class="location">McLean, VA</div>
+                        </div>
+                        <div class="date-badge">Nov 2025 - Present</div>
+                    </div>
+                    <div class="achievements">
+                        <ul>
+                            <li>Build <strong>scalable and secure identity verification solutions</strong> combating fraud across multiple platforms</li>
+                            <li>Design and implement <strong>RESTful APIs</strong> using Java Spring Framework with emphasis on security and performance</li>
+                            <li>Develop dynamic, responsive user interfaces with <strong>React.js</strong> ensuring optimal user experience</li>
+                            <li>Deploy and manage microservices on <strong>Amazon EKS</strong> for robust containerized applications</li>
+                            <li>Collaborate with cross-functional teams to deliver high-quality software solutions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">System Engineer</div>
+                            <div class="company">ID Dataweb</div>
+                            <div class="location">McLean, VA</div>
+                        </div>
+                        <div class="date-badge">Nov 2023 - Nov 2025</div>
+                    </div>
+                    <div class="achievements">
+                        <ul>
+                            <li>Specialized in building <strong>scalable identity verification solutions</strong> for enterprise clients</li>
+                            <li>Designed and developed backend services using <strong>Java Spring Framework</strong></li>
+                            <li>Created modern frontend applications with React.js following industry best practices</li>
+                            <li>Managed containerized microservices on Amazon EKS with focus on <strong>reliability and uptime</strong></li>
+                            <li>Participated in code reviews and <strong>mentored junior developers</strong> on team standards</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Full Stack Engineer</div>
+                            <div class="company">Harmonia Holdings Group</div>
+                            <div class="location">McLean, VA</div>
+                        </div>
+                        <div class="date-badge">Sept 2022 - Nov 2023</div>
+                    </div>
+                    <div class="achievements">
+                        <ul>
+                            <li>Led design and development of UI components, significantly enhancing user experience</li>
+                            <li>Engineered and optimized <strong>Angular and GraphQL</strong> codebase to manage databases and microservices</li>
+                            <li>Automated SQL database updates via GraphQL mutations triggered by frontend changes</li>
+                            <li><strong>Reduced manual data entry by 60%</strong> through intelligent automation strategies</li>
+                            <li>Thrived in Agile environments with strong stakeholder communication and collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Software Developer</div>
+                            <div class="company">Harmonia Holdings Group</div>
+                            <div class="location">McLean, VA</div>
+                        </div>
+                        <div class="date-badge">Sept 2021 - Sept 2022</div>
+                    </div>
+                    <div class="achievements">
+                        <ul>
+                            <li>Utilized <strong>Spring framework</strong> in Java to develop USCIS platform UI and microservices</li>
+                            <li>Managed databases and backend processes using pgAdmin and JDBC for client updates</li>
+                            <li>Automated file operations in internal S3 buckets using <strong>Amazon SDK</strong></li>
+                            <li>Introduced training-oriented design patterns to streamline developer onboarding</li>
+                            <li>Led UI design discussions and delivered client demos ensuring project alignment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECTS -->
+            <div class="section">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="project-card">
+                    <div class="project-title">Slackr Application - Study Group Platform</div>
+                    <div class="project-desc">
+                        Developed an Android application facilitating online connections among college students through joinable class-based group chats. Features real-time messaging, user authentication via Firebase, and social media-like environment. Currently undergoing rewrite in React Native for cross-platform compatibility.
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Real-time Messaging</span>
+                        <span class="tech-tag">Android</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

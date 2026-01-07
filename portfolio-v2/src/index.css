@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white dark:bg-dark-900 text-dark-900 dark:text-white;
+    @apply font-sans antialiased;
+    @apply transition-colors duration-300;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  /* Professional gradient text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary-600 to-accent-600;
+  }
+
+  /* Subtle glass effect */
+  .glass {
+    @apply bg-white/80 dark:bg-dark-800/80;
+    @apply backdrop-blur-md backdrop-saturate-150;
+    @apply border border-dark-200/50 dark:border-dark-700/50;
+    @apply shadow-lg;
+  }
+
+  /* Subtle hover glow */
+  .hover-glow {
+    @apply transition-shadow duration-300;
+    @apply hover:shadow-primary-500/20 hover:shadow-xl;
+  }
+
+  /* Professional buttons */
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg font-semibold;
+    @apply bg-gradient-to-r from-primary-600 to-primary-700;
+    @apply text-white shadow-md;
+    @apply hover:shadow-lg hover:scale-[1.02];
+    @apply transition-all duration-300;
+    @apply relative overflow-hidden;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-lg font-semibold;
+    @apply bg-transparent border-2 border-primary-600;
+    @apply text-primary-600 dark:text-primary-400;
+    @apply hover:bg-primary-600 hover:text-white;
+    @apply transition-all duration-300;
+  }
+
+  /* Section styling */
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Card styling */
+  .card {
+    @apply bg-white dark:bg-dark-800 rounded-xl;
+    @apply border border-dark-200 dark:border-dark-700;
+    @apply shadow-md hover:shadow-xl transition-all duration-300;
+  }
+}
+
+@layer utilities {
+  /* Custom scrollbar */
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    @apply bg-dark-100 dark:bg-dark-800;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    @apply bg-primary-500 rounded-full;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-600;
+  }
+
+  /* Background patterns */
+  .bg-dots {
+    background-image: radial-gradient(circle, rgba(0,0,0,0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .dark .bg-dots {
+    background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+
+  .dark .bg-grid {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  }
+}
