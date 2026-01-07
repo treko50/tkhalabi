@@ -65,7 +65,7 @@ export default function About() {
                 <div className="relative bg-gradient-to-br from-primary-500 to-accent-500 p-1 rounded-2xl">
                   <div className="bg-white dark:bg-dark-900 rounded-xl p-8">
                     <img
-                      src="/assets/img/professional-pic.png"
+                      src="assets/img/professional-pic.png"
                       alt="Tarek Halabi"
                       className="w-full h-auto rounded-lg"
                     />

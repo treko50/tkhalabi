@@ -15,8 +15,8 @@ export default function Footer() {
               Tarek Halabi
             </h3>
             <p className="text-dark-300">
-              Full Stack Engineer passionate about creating innovative solutions
-              and building exceptional web experiences.
+              Senior Full Stack Engineer passionate about building secure, scalable
+              solutions and exceptional web experiences.
             </p>
           </div>
 
@@ -27,11 +27,6 @@ export default function Footer() {
               <li>
                 <Link to="/" className="text-dark-300 hover:text-primary-400 transition-colors">
                   Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="text-dark-300 hover:text-primary-400 transition-colors">
-                  About
                 </Link>
               </li>
               <li>

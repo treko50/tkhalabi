@@ -60,7 +60,7 @@ export default function HomePage() {
                 <div className="relative bg-gradient-to-br from-primary-500 to-accent-500 p-1 rounded-2xl">
                   <div className="bg-white dark:bg-dark-900 rounded-xl p-8">
                     <img
-                      src="/assets/img/professional-pic.png"
+                      src="/tkhalabi/assets/img/professional-pic.png"
                       alt="Tarek Halabi"
                       className="w-full h-auto rounded-lg"
                     />
@@ -83,7 +83,7 @@ export default function HomePage() {
                 className="inline-block mb-4 px-6 py-2 rounded-full glass"
               >
                 <span className="text-sm font-medium gradient-text">
-                  Full Stack Engineer
+                  Senior Full Stack Engineer @ ID Dataweb
                 </span>
               </motion.div>
 
@@ -91,16 +91,21 @@ export default function HomePage() {
                 Tarek <span className="gradient-text">Halabi</span>
               </h1>
 
-              <div className="space-y-4 text-dark-600 dark:text-dark-300 mb-8">
+              <div className="space-y-4 text-lg text-dark-600 dark:text-dark-300 mb-8">
                 <p>
-                  With over 6 years of computer science experience, I'm proficient in Java, Python,
-                  JavaScript, C++, Kotlin, Spring Boot, React JS, and Angular. I excel in database
-                  design with SQL, R, NoSQL, and PostgreSQL.
+                  Hey there! I'm a passionate software engineer with 6+ years of experience building
+                  scalable identity verification solutions and enterprise applications. I specialize in
+                  full-stack development with Java Spring Framework, React.js, and cloud-native architectures.
                 </p>
                 <p>
-                  Currently a Full Stack Engineer at Harmonia Holdings Group LLC in McLean, VA, I
-                  contribute to UI design, code refactoring, and database management using Angular,
-                  GraphQL, and SQL.
+                  Currently, I'm a Senior Full Stack Engineer at ID Dataweb, where I design secure RESTful APIs,
+                  develop responsive user interfaces, and deploy microservices on Amazon EKS. I'm driven by
+                  solving complex problems and creating software that makes a real impact.
+                </p>
+                <p>
+                  When I'm not coding, you'll find me exploring new technologies, contributing to open-source
+                  projects, or working on my mobile app development side projects like the Slackr study group
+                  application.
                 </p>
               </div>
 

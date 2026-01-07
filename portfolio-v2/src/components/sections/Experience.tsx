@@ -23,7 +23,7 @@ const experiences: ExperienceItem[] = [
       'Deploy and manage microservices on Amazon EKS for robust containerized applications',
       'Collaborate with cross-functional teams to deliver high-quality software solutions',
     ],
-    logo: '/assets/img/experience/iddataweb.jpg',
+    logo: 'assets/img/experience/iddataweb.jpg',
     type: 'work',
   },
   {
@@ -37,7 +37,7 @@ const experiences: ExperienceItem[] = [
       'Managed containerized microservices on Amazon EKS with focus on reliability and uptime',
       'Participated in code reviews and mentored junior developers on team standards',
     ],
-    logo: '/assets/img/experience/iddataweb.jpg',
+    logo: 'assets/img/experience/iddataweb.jpg',
     type: 'work',
   },
   {
@@ -50,7 +50,7 @@ const experiences: ExperienceItem[] = [
       'Automated SQL updates through GraphQL mutations, reducing manual data entry significantly',
       'Resulted in substantial system efficiency improvement',
     ],
-    logo: '/assets/img/experience/harmonia.png',
+    logo: 'assets/img/experience/harmonia.png',
     type: 'work',
   },
   {
@@ -63,7 +63,7 @@ const experiences: ExperienceItem[] = [
       'Automated tasks using Amazon SDK and introduced developer onboarding training',
       'Led UI design discussions and client demos for alignment',
     ],
-    logo: '/assets/img/experience/harmonia.png',
+    logo: 'assets/img/experience/harmonia.png',
     type: 'work',
   },
   {
@@ -75,7 +75,7 @@ const experiences: ExperienceItem[] = [
       'Mastered data structures, algorithms, and system design',
       'Completed multiple full-stack development projects',
     ],
-    logo: '/assets/img/experience/umd-logo.jpg',
+    logo: 'assets/img/experience/umd-logo.jpg',
     type: 'education',
   },
 ];
