@@ -14,7 +14,10 @@
       "Bash(pdflatex:*)",
       "Bash(winget install:*)",
       "Bash(start:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(find:*)",
+      "Bash(git rm:*)",
+      "Bash(git add:*)"
     ]
   }
 }
