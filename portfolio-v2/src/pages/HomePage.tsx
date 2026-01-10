@@ -115,7 +115,7 @@ export default function HomePage() {
                   Get In Touch
                 </Link>
                 <a
-                  href="/resume/resume.pdf"
+                  href="/tkhalabi/resume/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-secondary flex items-center gap-2"

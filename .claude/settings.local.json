@@ -23,7 +23,9 @@
       "Bash(git fetch:*)",
       "Bash(git pull:*)",
       "Bash(git remote set-url:*)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(\"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\" --headless --disable-gpu --print-to-pdf=\"C:\\\\Users\\\\Tarek Halabi\\\\Desktop\\\\Personal Portfolio\\\\tkhalabi.github.io\\\\portfolio-v2\\\\public\\\\resume\\\\resume.pdf\" \"C:\\\\Users\\\\Tarek Halabi\\\\Desktop\\\\Personal Portfolio\\\\tkhalabi.github.io\\\\portfolio-v2\\\\public\\\\resume\\\\resume-modern.html\")",
+      "Bash(\"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\" --headless --disable-gpu --no-margins --print-to-pdf=\"C:\\\\Users\\\\Tarek Halabi\\\\Desktop\\\\Personal Portfolio\\\\tkhalabi.github.io\\\\portfolio-v2\\\\public\\\\resume\\\\resume.pdf\" --print-to-pdf-no-header \"C:\\\\Users\\\\Tarek Halabi\\\\Desktop\\\\Personal Portfolio\\\\tkhalabi.github.io\\\\portfolio-v2\\\\public\\\\resume\\\\resume-modern.html\")"
     ]
   }
 }

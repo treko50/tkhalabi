@@ -24,13 +24,6 @@ const projects: Project[] = [
     category: 'Mobile',
   },
   {
-    title: 'Calculator App',
-    description: 'A fully functional calculator application built with React. Features clean UI, responsive design, and handles complex calculations efficiently.',
-    tech: ['React', 'JavaScript', 'CSS3'],
-    image: 'assets/img/portfolio/calculator-pic.png',
-    category: 'Web',
-  },
-  {
     title: 'Hoops',
     description: 'JavaScript-based application using Node.js that parses basketball websites, collects player statistics, and generates comprehensive player cards and ratings.',
     tech: ['Node.js', 'JavaScript', 'Firebase', 'Web Scraping'],
@@ -48,7 +41,7 @@ const projects: Project[] = [
   },
 ];
 
-const categories = ['All', 'Web', 'Mobile', 'Full Stack'];
+const categories = ['All', 'Mobile', 'Full Stack'];
 
 export default function Projects() {
   const ref = useRef(null);
